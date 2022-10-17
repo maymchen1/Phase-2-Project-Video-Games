@@ -21,9 +21,3 @@ See the section about [running tests](https://facebook.github.io/create-react-ap
 Your app is ready to be deployed!
 
 See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-# phase2-project
-# Phase2Project
-# Phase-2-Project-Video-Games
-# Phase-2-Project-Video-Games
-# Phase-2-Project-Video-Games
