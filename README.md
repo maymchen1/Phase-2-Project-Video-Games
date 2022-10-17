@@ -1,6 +1,6 @@
-# Getting Started with Create React App
+# Video Game Tracker Website
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+For my phase 2 project, I created a video game tracker website where you can track video games you currently play, add video games by genre, and search for video games that you might be interested in based off of genre and number of players. 
 
 ## Available Scripts
 
