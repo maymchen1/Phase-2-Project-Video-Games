@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import GameForm from "./components /GameForm";
 import GameList from "./components /GameList";
@@ -7,6 +7,8 @@ import Navbar from "./components /Navbar";
 
 
 const App = ()=> {
+  const [games, setGames] = useState([]);
+  
   return (
     <Router>
       <Navbar />
