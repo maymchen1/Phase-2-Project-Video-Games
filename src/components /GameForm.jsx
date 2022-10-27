@@ -10,7 +10,7 @@ const GameForm = () => {
 
   const handleSubmit = e => {
     e.preventDefault();
-    fetch(baseUrl + "/games",{
+    fetch(baseUrl + "/Game",{
       method: "POST",
       headers: {
         "Accept": "application/json",
