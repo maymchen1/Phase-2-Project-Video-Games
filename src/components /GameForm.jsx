@@ -19,7 +19,7 @@ const GameForm = () => {
           id="name"
           value={ name }
           onChange={e=>setName(e.target.value)}/>
-        </div>
+        </div><br></br>
         <div>
         <label htmlFor="publisher">Publisher:</label>
           <input 
@@ -28,7 +28,7 @@ const GameForm = () => {
           id="publisher"
           value={ publisher }
           onChange={e=>setPublisher(e.target.value)}/>
-        </div>
+        </div><br></br>
         <div>
         <label htmlFor="genre">Genre:</label>
           <input 
@@ -37,7 +37,7 @@ const GameForm = () => {
           id="genre"
           value={ genre }
           onChange={e=>setGenre(e.target.value)}/>
-        </div>
+        </div><br></br>
         <div>
         <label htmlFor="year">Release Year:</label>
           <input 
@@ -46,7 +46,7 @@ const GameForm = () => {
           id="year"
           value={ year }
           onChange={e=>setYear(e.target.value)}/>
-        </div>
+        </div><br></br>
         <div>
         <label htmlFor="progress">Progress</label>
         <select 
@@ -60,7 +60,7 @@ const GameForm = () => {
           <option value="Want to Play">Want to Play</option>
           <option value="Paused">Paused</option>
         </select>
-        </div>
+        </div><br></br>
         <input type="submit" value="Add Game"/>
       </form>
     </div>
