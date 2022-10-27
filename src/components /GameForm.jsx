@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import { baseUrl } from '../Globals'
 
 const GameForm = () => {
   const [name, setName] = useState ('')
@@ -6,6 +7,18 @@ const GameForm = () => {
   const [genre, setGenre] = useState ('')
   const [year, setYear] = useState ('')
   const [progress, setProgress] = useState ('')
+
+  const handleSubmit = e => {
+    e.preventDefault();
+    fetch(baseUrl + "/games",{
+      method: "POST",
+      headers: {
+        "Accept": "application/json",
+        "Content-Type": "application/json"
+      },
+      body: JSON.stringify({ name, publisher, genre, year, progress})
+    })
+  }
 
   return (
     <div>
