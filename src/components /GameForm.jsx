@@ -61,6 +61,7 @@ const GameForm = () => {
           <option value="Paused">Paused</option>
         </select>
         </div>
+        <input type="submit" value="Add Game"/>
       </form>
     </div>
   )
