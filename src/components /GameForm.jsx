@@ -25,7 +25,7 @@ const GameForm = () => {
   return (
     <div>
       <h3>Add Game</h3>
-      <form>
+      <form onSubmit= {handleSubmit}>
         <div>
           <label htmlFor="name">Name: </label>
           <input 
