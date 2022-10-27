@@ -8,7 +8,7 @@ const GameForm = () => {
       <h3>Add Game</h3>
       <form>
         <div>
-          <label htmlFor='name'>Name: </label>
+          <label htmlFor="name">Name: </label>
           <input 
           type="text" 
           name="name" 
@@ -17,7 +17,7 @@ const GameForm = () => {
           onChange={e=>setName(e.target.value)}/>
         </div>
         <div>
-        <label htmlFor='publisher'>Publisher:</label>
+        <label htmlFor="publisher">Publisher:</label>
           <input 
           type="text" 
           name="publisher" 
@@ -26,7 +26,7 @@ const GameForm = () => {
           onChange={e=>setPublisher(e.target.value)}/>
         </div>
         <div>
-        <label htmlFor='genre'>Genre:</label>
+        <label htmlFor="genre">Genre:</label>
           <input 
           type="text" 
           name="genre" 
@@ -35,7 +35,7 @@ const GameForm = () => {
           onChange={e=>setGenre(e.target.value)}/>
         </div>
         <div>
-        <label htmlFor='year'>Release Year:</label>
+        <label htmlFor="year">Release Year:</label>
           <input 
           type="text" 
           name="year" 
@@ -44,12 +44,12 @@ const GameForm = () => {
           onChange={e=>setYear(e.target.value)}/>
         </div>
         <div>
-        <label htmlFor="status">Play Status</label>
+        <label htmlFor="progress">Progress</label>
         <select 
         name="status" 
-        value= { status }
+        value= { progress }
         id="status"
-        onChange={ e => setStatus(e.target.value)}
+        onChange={ e => setProgress(e.target.value)}
         >
           <option value="In-Progress">In-Progress</option>
           <option value="Completed">Completed</option>
