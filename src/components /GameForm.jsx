@@ -18,6 +18,8 @@ const GameForm = () => {
       },
       body: JSON.stringify({ name, publisher, genre, year, progress})
     })
+    .then(r=>r.json())
+    .then(data => console.log(data))
   }
 
   return (
