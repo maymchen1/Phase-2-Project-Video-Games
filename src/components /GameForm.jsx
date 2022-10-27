@@ -2,6 +2,10 @@ import React, { useState } from 'react'
 
 const GameForm = () => {
   const [name, setName] = useState ('')
+  const [publisher, setPublisher] = useState ('')
+  const [genre, setGenre] = useState ('')
+  const [year, setYear] = useState ('')
+  const [progress, setProgress] = useState ('')
 
   return (
     <div>
