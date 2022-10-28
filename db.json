@@ -63,6 +63,14 @@
       "year": "2018",
       "progress": "Completed",
       "id": 8
+    },
+    {
+      "name": "Phasmophobia",
+      "publisher": "Kinetic Games",
+      "genre": "Multiplayer",
+      "year": "2020",
+      "progress": "Paused",
+      "id": 9
     }
   ]
 }
