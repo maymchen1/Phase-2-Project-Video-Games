@@ -8,13 +8,18 @@ import Navbar from "./components /Navbar";
 
 const App = ()=> {
   const [games, setGames] = useState([]);
+  const addGame = game => {
+    setGames ([...games, game])}
   
   return (
     <Router>
       <Navbar />
       <Routes>
         <Route path="/" element={ <Home />}/>
-        <Route path="/games" element={ <GameList />}/>
+        <Route path="/games" element={
+           <GameList 
+           addGame= { addGame }
+           />}/>
         <Route path="/games/new" element={ <GameForm />}/>
       </Routes>
     </Router>

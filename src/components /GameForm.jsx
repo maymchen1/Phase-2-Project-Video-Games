@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import { baseUrl } from '../Globals'
 
-const GameForm = () => {
+const GameForm = ({ addGame }) => {
   const [name, setName] = useState ('')
   const [publisher, setPublisher] = useState ('')
   const [genre, setGenre] = useState ('')
@@ -19,7 +19,7 @@ const GameForm = () => {
       body: JSON.stringify({ name, publisher, genre, year, progress})
     })
     .then(r=>r.json())
-    .then(data => console.log(data))
+    .then(data => addGame(data))
   }
 
   return (
