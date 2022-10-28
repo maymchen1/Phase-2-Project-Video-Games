@@ -23,7 +23,7 @@ fetch(baseUrl +"/games")
       <Routes>
         <Route path="/" element={ <Home />}/>
         <Route path="/games" element={
-           <GameList />}/>
+           <GameList games={games}/>}/>
         <Route path="/games/new" element={
            <GameForm 
            addGame= { addGame }/>}/>
