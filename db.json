@@ -1,52 +1,68 @@
 {
   "games": [
     {
-      "name": "May Meizhi Chen",
-      "publisher": "vgvh",
-      "genre": "chgh",
-      "year": "2434",
-      "progress": "",
+      "name": "Valorant",
+      "publisher": "Riot Games",
+      "genre": "FPS",
+      "year": "2020",
+      "progress": "In-Progress",
       "id": 1
     },
     {
-      "name": "May Meizhi Chen",
-      "publisher": "fe",
-      "genre": "chgh",
-      "year": "2434",
-      "progress": "",
+      "name": "League of Legends",
+      "publisher": "Riot Games",
+      "genre": "Multiplayer",
+      "year": "2009",
+      "progress": "Paused",
       "id": 2
     },
     {
-      "name": "May Meizhi Chen",
-      "publisher": "vgvh",
-      "genre": "chgh",
-      "year": "2434",
-      "progress": "",
+      "name": "CoreKeeper",
+      "publisher": "Fireshine Games",
+      "genre": "Sandbox",
+      "year": "2021",
+      "progress": "In-Progress",
       "id": 3
     },
     {
-      "name": "weqw",
-      "publisher": "eqwe",
-      "genre": "eqwe",
-      "year": "eqwe",
-      "progress": "Completed",
+      "name": "Minecraft",
+      "publisher": "Mojang Studios",
+      "genre": "Survival",
+      "year": "2011",
+      "progress": "Paused",
       "id": 4
     },
     {
-      "name": "May Meizhi Chen",
-      "publisher": "vgvh",
-      "genre": "",
-      "year": "2434",
-      "progress": "",
+      "name": "The Sims 4",
+      "publisher": "EA Games",
+      "genre": "Simulation",
+      "year": "2014",
+      "progress": "Paused",
       "id": 5
     },
     {
-      "name": "May Meizhi Chen",
-      "publisher": "vgvh",
-      "genre": "",
-      "year": "2434",
-      "progress": "",
+      "name": "Paralives",
+      "publisher": "Paralives Studios",
+      "genre": "Simulation",
+      "year": "TBA",
+      "progress": "Want to Play",
       "id": 6
+    },
+    {
+      "name": "Divinity: Original Sin 2 ",
+      "publisher": "Larian Studios",
+      "genre": "Multiplayer",
+      "year": "2017",
+      "progress": "In-Progress",
+      "id": 7
+    },
+    {
+      "name": "Overcooked 2",
+      "publisher": "Team 17",
+      "genre": "Multiplayer",
+      "year": "2018",
+      "progress": "Completed",
+      "id": 8
     }
   ]
 }

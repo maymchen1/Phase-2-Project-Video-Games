@@ -1,8 +1,13 @@
 import React from 'react'
+import GameCard from './GameCard'
 
-const GameList = () => {
+const GameList = ({games}) => {
+  const gameCards=games.map(game => <GameCard key= {game.id} game={game}/>)
   return (
-    <div>GameList</div>
+    <div>
+      <h3>Game List</h3>
+      {gameCards}
+        </div>
   )
 }
 

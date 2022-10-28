@@ -6,7 +6,7 @@ const GameForm = ({ addGame }) => {
   const [publisher, setPublisher] = useState ('')
   const [genre, setGenre] = useState ('')
   const [year, setYear] = useState ('')
-  const [progress, setProgress] = useState ('')
+  const [progress, setProgress] = useState ('In-Progress')
 
   const handleSubmit = e => {
     e.preventDefault();
