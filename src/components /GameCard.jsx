@@ -4,6 +4,7 @@ const GameCard = ({game}) => {
   return (
     <div>
       <h4>Game Name: {game.name}</h4>
+      <p>{game.image}</p>
       <p>Publisher: {game.publisher}</p>
       <p>Genre: {game.genre}</p>
       <p>Release Year: {game.year}</p>
