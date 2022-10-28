@@ -5,6 +5,7 @@ import GameList from "./components /GameList";
 import Home from "./components /Home";
 import Navbar from "./components /Navbar";
 import { baseUrl } from "./Globals";
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 
 const App = ()=> {
