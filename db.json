@@ -1,3 +1,20 @@
 {
-    "games":[]
+  "games": [
+    {
+      "name": "May Meizhi Chen",
+      "publisher": "vgvh",
+      "genre": "chgh",
+      "year": "2434",
+      "progress": "",
+      "id": 1
+    },
+    {
+      "name": "May Meizhi Chen",
+      "publisher": "fe",
+      "genre": "chgh",
+      "year": "2434",
+      "progress": "",
+      "id": 2
+    }
+  ]
 }
