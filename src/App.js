@@ -1,36 +1,36 @@
-import React, { useEffect, useState } from "react";
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import GameForm from "./components /GameForm";
-import GameList from "./components /GameList";
-import Home from "./components /Home";
-import Navbar from "./components /Navbar";
-import { baseUrl } from "./Globals";
-import 'bootstrap/dist/css/bootstrap.min.css';
+import React, { useState } from "react";
+import { BrowserRouter as Router, Routes, Route} from 'react-router-dom';
+import ViewCart from "./components/carts/ViewCart";
+import ItemList from "./components/items/ItemList";
+import Logo from "./components/navigation/Logo";
+import Navbar from "./components/navigation/Navbar";
+import Home from "./components/static/Home";
 
+const App = () => {
+  const [currentCart, setCurrentCart] = useState({items: []})
+    const [items, setItems] = useState([])
+//   return (
+//     <Router>
+//       <Navbar />
+//       <Routes>
+//         <Route path="/" element={<Home />} />
+//         <Route path="/items" element={<ItemList />} />
+//         <Route path="/checkout" element={<ViewCart />} />
+//       </Routes>
+//       </Router>
+//   );
+// }
 
-const App = ()=> {
-  const [games, setGames] = useState([]);
-  useEffect(()=> {
-fetch(baseUrl +"/games")
-.then(r=> r.json())
-.then(data => setGames(data))
-  }, [])
-  const addGame = game => {
-    setGames ([...games, game])}
-  
-  return (
-    <Router>
-      <Navbar />
-      <Routes>
-        <Route path="/" element={ <Home />}/>
-        <Route path="/games" element={
-           <GameList games={games}/>}/>
-        <Route path="/games/new" element={
-           <GameForm 
-           addGame= { addGame }/>}/>
-      </Routes>
-    </Router>
-  );
+return (
+  <Router>
+    <Logo/>
+    <Navbar />
+    <Routes>
+      <Route path="/" element={<Home />} />
+      <Route path="/items" element={<ItemList items={items} setItems={setItems} />} />
+      <Route path="/checkout" element={<ViewCart currentCart={currentCart} setCurrentCart={setCurrentCart} />} />
+    </Routes>
+  </Router>
+);
 }
-
 export default App;
